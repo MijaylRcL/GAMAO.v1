@@ -1,0 +1,19 @@
+:root {
+    --fuente: 'lato', sans-serif;
+
+    --blanco:#FFF; 
+    --transparente: #ffffff;
+    --color1: #080135;
+    --color2: #af202b;
+    --color3: #1b04af;
+    --gris:#E5E8EA;
+
+    --sombra: #635ab9;
+
+    --timeAni: 1.5s;
+
+    /*Variable donde indicamos cuantas imagenes vamos a usar*/
+    --numberImgs: 4;
+    /*Variable donde indicamos el tamaño de las imagenes, debemos indicarlo en %*/
+    --widthImg: 60%
+}
