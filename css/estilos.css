@@ -681,7 +681,7 @@ header {
     max-width: 150rem;
     height: 22rem;
     position: relative;
-    margin: 5px 100px;
+    margin: 5px 150px;
 
     /* IN THE END */
     overflow: hidden;
@@ -1004,7 +1004,7 @@ header {
     font-weight: 600;
     outline: none;
     padding: 10px 35px;
-    margin-top: 25px;    
+    margin-top: 25px;
 }
 
 /* Footer */
@@ -1212,7 +1212,7 @@ form button {
     padding: 2% 0;
 }
 
-.galeria-conocenos img:hover{
+.galeria-conocenos img:hover {
     filter: grayscale(80%);
 }
 
@@ -1364,6 +1364,133 @@ form button {
 }
 
 /* PROYECTOS */
+
+.proyectos-main {
+    width: 100vw;
+    height: 80vh;
+    margin-bottom: 10%;
+}
+
+.container-proyectos {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden
+}
+
+.slider-text {
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    padding: 0 3rem;
+}
+
+.slider-text h3 {
+    font-size: 2rem;
+    color: var(--color1);
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.slider-text p {
+    font-size: 1rem;
+    color: var(--color1);
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+
+.slider-container {
+    width: calc((100%/3)*2);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: calc(var(--widthImg)*var(--numberImgs));
+    height: 100%;
+    align-items: center;
+    margin-left: calc(-1 * var(--widthImg));
+}
+
+.section-slider {
+    width: 100%;
+    height: 80%;
+}
+
+.section-slider:not(:last-child) {
+    margin-right: 30px;
+}
+
+.slider-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-slider span {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    font-style: italic;
+}
+
+.slider-btn {
+    position: absolute;
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.slider-btn:hover {
+    filter: sepia();
+}
+
+.slider-btn-R {
+    left: 20px;
+}
+
+.slider-btn-L {
+    right: 70px;
+    transform: scaleX(-1);
+}
+
+.fondText {
+    width: 400vw;
+    z-index: 1;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.fondText p {
+    margin: 0;
+    font-size: 10rem;
+    font-weight: bold;
+    color: var(--gris);
+    top: 0;
+    left: 20%;
+}
+
+.contentNull {
+    width: 100vw;
+    height: 40vh;
+}
 
 /* PROYECTOS - portada */
 
@@ -1546,7 +1673,7 @@ form button {
     font-weight: 600;
     outline: none;
     padding: 10px 35px;
-    margin-top: 25px;  
+    margin-top: 25px;
 }
 
 .mapa-contacto {
@@ -1881,6 +2008,38 @@ form button {
 
     }
 
+    /* Portada - Main */
+
+    .portada-main {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .portada-main h1 {
+        font-size: 20px;
+        padding-top: 80%;
+    }
+
+    .portada-main p {
+        color: var(--blanco);
+        font-family: "Poppins";
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .portada-main button {
+        color: var(--blanco);
+        background-color: var(--color2);
+        border: none;
+        font-family: "Poppins";
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        padding: 5px 10px;
+        margin-top: 3%;
+        cursor: pointer;
+    }
+
     /* Nosotros - Main */
 
     .nosotros-main {
@@ -1923,7 +2082,8 @@ form button {
     /* Contador Main */
 
     .contador-main {
-        width: 100%;
+        width: 90%;
+        margin-right: 10%;
     }
 
     .wrapper-main {
@@ -1976,15 +2136,151 @@ form button {
         padding-top: 5px;
     }
 
+    /* Servicios-Main */
+
+
+
     /* Proyectos Main */
 
     .proyectos-main {
         width: 100vw;
-        height: 100vh;
+        height: 70vh;
         margin-bottom: 10%;
     }
 
-    /* Proyectos Main */
+    .container-proyectos {
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden
+    }
+
+    .slider-text {
+        width: calc(100%/3);
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 2;
+        padding: 0 1rem;
+    }
+
+    .slider-text h3 {
+        font-size: 1.2rem;
+        color: var(--color1);
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        padding-bottom: 15px;
+    }
+
+    .slider-text p {
+        font-size: 0.8rem;
+        color: var(--color1);
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+        text-align: justify;
+    }
+
+    .slider-container {
+        width: calc((100%/3)*2);
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .slider {
+        display: flex;
+        justify-content: center;
+        width: calc(var(--widthImg)*var(--numberImgs));
+        height: 100%;
+        align-items: center;
+        margin-left: calc(-1 * var(--widthImg));
+    }
+
+    .section-slider {
+        width: 100%;
+        height: 80%;
+    }
+
+    .section-slider:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .slider-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding-top: 60%;
+    }
+
+    .section-slider span {
+        font-size: 10px;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+        text-align: justify;
+        font-style: italic;
+    }
+
+    .slider-btn {
+        position: absolute;
+        width: 35px;
+        height: auto;
+        cursor: pointer;
+        overflow: visible;
+    }
+
+    .slider-btn:hover {
+        filter: sepia();
+    }
+
+    .slider-btn-R {
+        left: 20px;
+    }
+
+    .slider-btn-L {
+        right: 70px;
+        transform: scaleX(-1);
+    }
+
+    .fondText {
+        width: 400vw;
+        z-index: 1;
+        position: absolute;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .fondText p {
+        margin: 0;
+        font-size: 10rem;
+        font-weight: bold;
+        color: var(--gris);
+        top: 0;
+        left: 20%;
+    }
+
+    .contentNull {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    /* Testimoniales Main */
+
+    .testimonial-main-slider {
+        max-width: 150rem;
+        height: 22rem;
+        position: relative;
+        margin: 5px;
+    
+        /* IN THE END */
+        overflow: hidden;
+    }
 
     .testimonial-main-logos {
         width: auto;
@@ -1998,7 +2294,7 @@ form button {
     }
 
     .testimonial-main-logos li img {
-        width: 25%;
+        width: 35%;
         height: auto;
     }
 
@@ -2011,13 +2307,13 @@ form button {
 
     .izq-blog-main {
         display: flex;
-        float: none;
+        float: left;
         width: 100%;
     }
 
     .izq-blog-main img {
-        width: 20%;
-        padding-top: 2%;
+        width: 35%;
+        padding-top: 5%;
     }
 
     .der-blog-main {
@@ -2025,12 +2321,44 @@ form button {
         width: 100%;
     }
 
+    .blog-resume {
+        width: 100%;
+        height: auto;
+        padding-left: 15px;
+    }
+
+    .blog-resume-text {
+        width: 100%;
+        height: auto;
+        text-align: justify;
+    }
+
+    .blog-resume-text span {
+        width: 100%;
+        height: auto;
+        padding: 2px 10px;
+        margin: 0;
+        align-content: left;
+    }
+
+    .blog-resume-text p {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .blog-resume-text button {
+        padding: 0;
+        margin: 10px 0;
+    }
+
     .blog-resume-img {
         width: 100%;
     }
 
     .blog-resume-img img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
@@ -2096,7 +2424,7 @@ form button {
     .portada-conocenos h1 {
         font-size: 50px;
         font-weight: 800;
-        padding: 40% 0 5% 0;
+        padding: 80% 0 5% 0;
     }
 
     .portada-conocenos p {
@@ -2155,7 +2483,7 @@ form button {
 
     .portada-proyectos h1 {
         font-size: 40px;
-        padding: 60% 0 5% 0;
+        padding: 80% 0 5% 0;
     }
 
     .portada-proyectos p {
@@ -2200,7 +2528,7 @@ form button {
     .portada-blogs h1 {
         font-size: 45px;
         font-weight: 800;
-        padding: 50% 0 5% 0;
+        padding: 80% 0 5% 0;
     }
 
     .portada-blogs p {
@@ -2381,7 +2709,7 @@ form button {
         float: none;
         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
         padding: 5% 0;
     }
 
