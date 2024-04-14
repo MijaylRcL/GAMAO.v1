@@ -14,17 +14,17 @@
 
 /* Header menu*/
 
-header {
+.header {
     width: 100%;
     height: 12%;
-    background: var(--blanco);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
     position: fixed;
     z-index: 10;
-    opacity: 80%;
+    opacity: 100%;
 }
 
 .logo-main img {
@@ -46,7 +46,7 @@ header {
 
 .nav-bar ul li a {
     display: block;
-    color: var(--color1);
+    color: var(--blanco);
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -57,12 +57,7 @@ header {
 .nav-bar ul :nth-child(6) {
     background-color: var(--color2);
     padding-top: 2px;
-}
-
-.nav-bar ul li a:hover {
-    color: var(--color1);
-    border-top: 3px;
-    border-style: solid;
+    margin-left: 10%;
 }
 
 .nav-bar ul :nth-child(6) :hover {
@@ -70,8 +65,14 @@ header {
     border: none;
 }
 
+.nav-bar ul li a:hover {
+    color: none;
+    border-top: 3px;
+    border-style: solid;
+}
+
 .nav-bar ul li a.active {
-    color: var(--color1);
+    color: var(--color2);
     border-top: 3px;
     border-style: solid;
     border-color: var(--color2);
@@ -79,35 +80,90 @@ header {
 
 /* Minimenu Header */
 
-.minimenu-servicios {
+.nav-bar li ul {
+    display: none;
+    position: fixed;
+    margin-left: -300px;
+    padding-top: 10px;
+    background-color: var(--blanco);
+}
+
+.nav-bar li ul :nth-child(6) {
+    display: flex;
+    margin-left: 0;
+    background-color: transparent;
+}
+
+.nav-bar li ul img {
+    width: 80%;
+    height: auto;
+}
+
+.nav-bar li:hover>ul {
     display: flex;
     flex-direction: row;
+}
+
+/* Header sticky */
+
+.header-sticky {
+    width: 100%;
+    height: 12%;
+    background: var(--blanco);
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50%;
-    height: auto;
-    background-color: blue;
-    padding: 5px 10px;
-    position: relative;
+    padding: 0 100px;
+    position: fixed;
+    z-index: 10;
+    opacity: 80%;
 }
 
-.minimenu-servicios-modal {
+.header-sticky .nav-bar ul li a {
+    color: var(--color1);
+}
+
+.header-sticky .nav-bar ul li a.active {
+    color: var(--color2);
+    border-top: 3px;
+    border-style: solid;
+    border-color: var(--color2);
+}
+
+.header-sticky .nav-bar ul li :nth-child(6) {
+    color: var(--blanco);
+    background-color: var(--color2);
+    padding-top: 2px;
+    margin-left: 10%;
+}
+
+.header-sticky .nav-bar ul li :nth-child(6) :hover {
+    color: var(--blanco);
+    border: none;
+}
+
+.header-sticky .nav-bar li ul {
+    display: none;
+    position: fixed;
+    margin-left: -300px;
+    padding-top: 10px;
+    background-color: var(--blanco);
+}
+
+.header-sticky .nav-bar li ul :nth-child(6) {
+    display: flex;
+    margin-left: 0;
+    background-color: transparent;
+}
+
+.header-sticky .nav-bar li ul img {
+    width: 80%;
+    height: auto;
+}
+
+.header-sticky .nav-bar li:hover>ul {
     display: flex;
     flex-direction: row;
-}
-
-.minimenu-servicios-modal img {
-    width: 40%;
-    height: auto;
-    padding: 0 10px;
-}
-
-#minimenu-modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
 }
 
 /* Titulo Generico */
@@ -370,7 +426,7 @@ header {
 }
 
 .container-servici {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     position: absolute;
@@ -419,7 +475,7 @@ header {
 }
 
 .icon {
-    width: 120px;
+    width: 60%;
     filter: invert();
     z-index: 2;
 }
@@ -1962,6 +2018,11 @@ form button {
 
 @media only screen and (max-width: 900px) {
 
+    .header {
+        justify-content: space-around;
+        padding: 1% 10%;
+    }
+
     .hamburger-main {
         display: block;
         cursor: pointer;
@@ -1987,13 +2048,13 @@ form button {
     }
 
     .nav-bar.active {
-        height: 40vh;
+        height: 100vh;
     }
 
     .nav-bar ul {
         display: block;
         width: fit-content;
-        margin: 4% auto 0 auto;
+        margin: 40% auto 0 auto;
         text-align: center;
         transition: 0.5s;
         opacity: 0;
@@ -2004,8 +2065,17 @@ form button {
     }
 
     .nav-bar ul li a {
-        margin-bottom: 12px;
+        color: var(--color1);
+        padding: 15px;
+    }
 
+    .nav-bar ul :nth-child(6) {
+        padding-right: 10px;
+    }
+
+    .logo-main img {
+        width: 70%;
+        height: auto;
     }
 
     /* Portada - Main */
@@ -2138,7 +2208,9 @@ form button {
 
     /* Servicios-Main */
 
-
+    .icon {
+        width: 80%;
+    }
 
     /* Proyectos Main */
 
@@ -2277,7 +2349,7 @@ form button {
         height: 22rem;
         position: relative;
         margin: 5px;
-    
+
         /* IN THE END */
         overflow: hidden;
     }
