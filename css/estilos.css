@@ -12,8 +12,6 @@
 
 /* Header */
 
-
-
 /* Header menu*/
 
 .header {
@@ -84,26 +82,39 @@
 
 .nav-bar li ul {
     display: none;
+    justify-content: space-evenly;
     position: fixed;
     margin-left: -300px;
     padding-top: 10px;
     background-color: var(--blanco);
+    padding-left: 1%;
+    border-top: 0;
 }
 
 .nav-bar li ul :nth-child(6) {
     display: flex;
     margin-left: 0;
     background-color: transparent;
+    width: 30%;
+    height: auto;
+}
+
+.nav-bar li ul :nth-child(6) :hover {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
 }
 
 .nav-bar li ul img {
     width: 80%;
     height: auto;
+    border-top: 0;
 }
 
 .nav-bar li:hover>ul {
     display: flex;
     flex-direction: row;
+    border-top: 0;
 }
 
 /* Header sticky */
@@ -119,10 +130,18 @@
     position: fixed;
     z-index: 10;
     opacity: 80%;
+    transition: 0.1s;
 }
 
 .header-sticky .nav-bar ul li a {
     color: var(--color1);
+}
+
+.header-sticky .nav-bar ul li a:hover {
+    color: var(--color1);
+    width: 110%;
+    height: auto;
+    transition: 0.5s;
 }
 
 .header-sticky .nav-bar ul li a.active {
@@ -141,15 +160,18 @@
 
 .header-sticky .nav-bar ul li :nth-child(6) :hover {
     color: var(--blanco);
+    width: 100%;
+    height: auto;
     border: none;
 }
 
 .header-sticky .nav-bar li ul {
-    display: none;
+    justify-content: space-evenly;
     position: fixed;
-    margin-left: -25%;
+    margin-left: -300px;
     padding-top: 10px;
     background-color: var(--blanco);
+    padding-left: 1%;
 }
 
 .header-sticky .nav-bar li ul :nth-child(6) {
@@ -166,6 +188,7 @@
 .header-sticky .nav-bar li:hover>ul {
     display: flex;
     flex-direction: row;
+    border: none;
 }
 
 /* Titulo Generico */
@@ -479,7 +502,8 @@
 }
 
 .icon {
-    width: 60%;
+    width: auto;
+    height: 20%;
     filter: invert();
     z-index: 2;
 }
@@ -1103,18 +1127,25 @@ footer {
 .footer-colum a {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
 }
 
 .footer-colum span {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 400;
     text-align: justify;
     margin-right: 25px;
     padding: 5px 0;
+    align-items: center;
+}
+
+.footer-colum img {
+    width: 5%;
+    height: auto;
+    padding-top: 5px;
 }
 
 form {
@@ -1145,7 +1176,7 @@ form button {
     font-family: "Poppins";
     font-size: 12px;
     font-weight: 600;
-    padding: 5px 15px;
+    padding: 1px 10px;
     margin-top: 2px;
 }
 
@@ -1182,6 +1213,13 @@ form button {
     padding: 0 10%;
 }
 
+.social-links-footer a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .social-links img {
     width: 40%;
     height: auto;
@@ -1205,8 +1243,14 @@ form button {
     color: var(--blanco);
     font-family: "Poppins";
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     padding-left: 15px;
+}
+
+.reclamaciones-footer a:hover {
+    color: var(--color1);
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .firma-footer {
@@ -1316,6 +1360,7 @@ form button {
 
 .galeria-conocenos img:hover {
     filter: grayscale(80%);
+    transition: 0.5s;
 }
 
 
@@ -1379,6 +1424,8 @@ form button {
 }
 
 .conocenos-valores-h {
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     padding: 3% 0;
@@ -1395,13 +1442,13 @@ form button {
 .conocenos-valores-izq h5 {
     color: var(--color1);
     font-family: "Poppins";
-    font-size: 200px;
+    font-size: 100px;
     font-weight: 900;
     text-align: center;
 }
 
 .conocenos-valores-izq img {
-    width: 50%;
+    width: 75%;
     height: auto;
     padding: 5% 0;
     margin: 5% 0;
@@ -1665,6 +1712,7 @@ form button {
 
 .galeria-proyectos-item img:hover {
     filter: blur(2px);
+    transition: 0.5s;
 }
 
 .galeria-proyectos-item span {
@@ -2026,6 +2074,15 @@ form button {
     font-family: "Poppins";
     font-size: 25px;
     font-weight: 600;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.servicios-contenido h5 {
+    color: var(--color1);
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 400;
     text-align: center;
     padding: 5px 0;
 }
