@@ -1,5 +1,5 @@
-@import url('root.css');
-@import url('reset.css');
+@import url("root.css");
+@import url("reset.css");
 
 /* Estilos generales */
 * {
@@ -530,7 +530,6 @@
     height: auto;
 }
 
-
 .banner-main h4 {
     color: var(--blanco);
     font-size: 40px;
@@ -584,11 +583,11 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .slider-text {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     height: 100%;
     display: flex;
     justify-items: center;
@@ -617,7 +616,7 @@
 }
 
 .slider-container {
-    width: calc((100%/3)*2);
+    width: calc((100% / 3) * 2);
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -627,7 +626,7 @@
 .slider {
     display: flex;
     justify-content: center;
-    width: calc(var(--widthImg)*var(--numberImgs));
+    width: calc(var(--widthImg) * var(--numberImgs));
     height: 100%;
     align-items: center;
     margin-left: calc(-1 * var(--widthImg));
@@ -770,7 +769,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 20rem;
+    height: auto;
 
     display: flex;
     align-items: center;
@@ -785,7 +784,7 @@
     border: solid;
     border-color: var(--blanco);
     border-width: 2px;
-    padding: 5% 10%;
+    padding: 5% 15%;
 }
 
 .testimonial-contenido h5 {
@@ -812,7 +811,7 @@
 
     border: none;
     background: var(--color2);
-    font-family: 'Lato';
+    font-family: "Lato";
     color: var(--blanco);
     height: 2.5rem;
     width: 2.5rem;
@@ -874,7 +873,7 @@
     left: -6.8rem;
     line-height: 1;
     font-size: 20rem;
-    font-family: 'Lato';
+    font-family: "Lato";
     color: var(--color1);
     z-index: -1;
 }
@@ -964,7 +963,6 @@
     font-size: 14px;
     font-weight: 400;
     padding: 5px 100px 10px 0;
-
 }
 
 .blog-resume-text button {
@@ -1100,13 +1098,13 @@ footer {
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background: linear-gradient(to right, #080135 0%, #af202b 100%);
     padding: 0 8%;
 }
 
 .footer-colum {
-    width: 25%;
+    width: calc(100% / 4);
     float: left;
     display: flex;
     flex-direction: column;
@@ -1121,21 +1119,21 @@ footer {
     font-weight: 800;
     text-align: left;
     text-decoration: underline var(--color2) 4px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .footer-colum a {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 13px;
+    font-size: 0.7rem;
     font-weight: 400;
 }
 
 .footer-colum span {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 10px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
     text-align: justify;
     margin-right: 25px;
     padding: 5px 0;
@@ -1275,7 +1273,6 @@ form button {
     font-weight: 700;
 }
 
-
 /* CONOCENOS */
 
 /* CONOCENOS - portada */
@@ -1322,8 +1319,7 @@ form button {
     background-color: var(--blanco);
     display: flex;
     flex-direction: column;
-    margin: 10% 0 5% 0;
-
+    margin: 5% 0 2% 0;
 }
 
 .nosotros-conocenos h2 {
@@ -1341,21 +1337,21 @@ form button {
     font-family: "Poppins";
     font-size: 14px;
     text-align: justify;
-    padding: 2% 20% 10% 20%;
+    padding: 2% 20% 1% 20%;
 }
 
 .galeria-conocenos {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .galeria-conocenos img {
-    width: 45%;
+    width: 20%;
     height: auto;
-    padding: 2% 0;
+    padding: 1% 0;
 }
 
 .galeria-conocenos img:hover {
@@ -1363,23 +1359,21 @@ form button {
     transition: 0.5s;
 }
 
-
 /* CONOCENOS - c2a */
 
 .c2a-conocenos {
     background-color: var(--color2);
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 300;
-    ;
     text-align: center;
     padding: 2% 0;
 }
 
 .c2a-conocenos span {
     font-family: "Poppins";
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     font-style: italic;
 }
@@ -1389,9 +1383,9 @@ form button {
 .misvi-conocenos {
     display: flex;
     flex-direction: column;
-    margin: 5% 20%;
+    margin: 2% 20%;
     background: linear-gradient(to bottom, #1b04af 0%, #080135 100%);
-    padding: 10% 0 13% 0;
+    padding: 2% 0 5% 0;
 }
 
 .misvi-conocenos h4 {
@@ -1513,6 +1507,46 @@ form button {
     border: none;
 }
 
+/* Valores arreglo */
+
+.nosotros-valores {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1% 10%;
+}
+
+.nosotros-valor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nosotros-valor img {
+    width: 25%;
+    height: auto;
+}
+
+.nosotros-valor h4 {
+    font-size: 1.5rem;
+    color: var(--color1);
+    font-weight: 800;
+    font-family: "Poppins";
+    padding: 5% 0;
+}
+
+.nosotros-valor p {
+    font-size: 1.2rem;
+    color: var(--color1);
+    font-weight: 400;
+    font-family: "Poppins";
+    padding: 5% 15%;
+    text-align: center;
+}
+
 /* PROYECTOS */
 
 .proyectos-main {
@@ -1526,11 +1560,11 @@ form button {
     display: flex;
     width: 100vw;
     height: 100vh;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .slider-text {
-    width: calc(100%/3);
+    width: calc(100% / 3);
     height: 100%;
     display: flex;
     justify-items: center;
@@ -1559,7 +1593,7 @@ form button {
 }
 
 .slider-container {
-    width: calc((100%/3)*2);
+    width: calc((100% / 3) * 2);
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -1569,7 +1603,7 @@ form button {
 .slider {
     display: flex;
     justify-content: center;
-    width: calc(var(--widthImg)*var(--numberImgs));
+    width: calc(var(--widthImg) * var(--numberImgs));
     height: 100%;
     align-items: center;
     margin-left: calc(-1 * var(--widthImg));
@@ -1733,7 +1767,7 @@ form button {
 .portada-contactanos {
     width: 100%;
     height: 70vh;
-    background: linear-gradient(to right, #080135 0%, #af202b 100%);
+    background: linear-gradient(to right, #af202b 0%, #080135 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1943,7 +1977,6 @@ form button {
     font-size: 14px;
     font-weight: 400;
     padding: 5px 100px 10px 0;
-
 }
 
 .ultimo-blog-text button {
@@ -2028,7 +2061,6 @@ form button {
     padding: 2% 10% 0 10%;
 }
 
-
 /* Servicios-lista - galeria lista */
 
 .portada-servicios-lista {
@@ -2096,6 +2128,59 @@ form button {
     padding: 25px 15%;
 }
 
+/* Galeria Obras */
+
+#titulo-obras {
+    width: 100%;
+    height: auto;
+    color: var(--blanco);
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: 15% 0 10% 0;
+    text-align: center;
+    font-style: italic;
+    background: linear-gradient(to right, #af202b 0%, #080135 100%);
+}
+
+.galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 5% 2%;
+}
+
+.galeria .col-lg-4 {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 70%;
+    height: auto;
+    filter: grayscale(98%);
+}
+
+.galeria img:hover {
+    filter: none;
+    transition: 1.5s;
+}
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1320px) {
@@ -2121,7 +2206,6 @@ form button {
 }
 
 @media only screen and (max-width: 900px) {
-
     .header {
         justify-content: space-around;
         padding: 1% 10%;
@@ -2180,6 +2264,12 @@ form button {
     .logo-main img {
         width: 70%;
         height: auto;
+    }
+
+    /* Minimenu Header */
+
+    .nav-bar li ul {
+        display: none;
     }
 
     /* Portada - Main */
@@ -2313,14 +2403,15 @@ form button {
     /* Servicios-Main */
 
     .icon {
-        width: 80%;
+        width: auto;
+        height: 6%;
     }
 
     /* Proyectos Main */
 
     .proyectos-main {
         width: 100vw;
-        height: 70vh;
+        height: 40vh;
         margin-bottom: 10%;
     }
 
@@ -2328,13 +2419,13 @@ form button {
         position: absolute;
         display: flex;
         width: 100vw;
-        height: 100vh;
-        overflow: hidden
+        height: auto;
+        overflow: hidden;
     }
 
     .slider-text {
-        width: calc(100%/3);
-        height: 100%;
+        width: calc(100% / 3);
+        height: auto;
         display: flex;
         justify-items: center;
         text-align: center;
@@ -2345,7 +2436,7 @@ form button {
     }
 
     .slider-text h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--color1);
         font-weight: 700;
         font-family: "Poppins", sans-serif;
@@ -2354,7 +2445,7 @@ form button {
     }
 
     .slider-text p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         color: var(--color1);
         font-weight: 300;
         font-family: "Poppins", sans-serif;
@@ -2362,7 +2453,7 @@ form button {
     }
 
     .slider-container {
-        width: calc((100%/3)*2);
+        width: calc((100% / 3) * 2);
         height: 100%;
         position: relative;
         overflow: hidden;
@@ -2372,7 +2463,7 @@ form button {
     .slider {
         display: flex;
         justify-content: center;
-        width: calc(var(--widthImg)*var(--numberImgs));
+        width: calc(var(--widthImg) * var(--numberImgs));
         height: 100%;
         align-items: center;
         margin-left: calc(-1 * var(--widthImg));
@@ -2404,24 +2495,7 @@ form button {
     }
 
     .slider-btn {
-        position: absolute;
-        width: 35px;
-        height: auto;
-        cursor: pointer;
-        overflow: visible;
-    }
-
-    .slider-btn:hover {
-        filter: sepia();
-    }
-
-    .slider-btn-R {
-        left: 20px;
-    }
-
-    .slider-btn-L {
-        right: 70px;
-        transform: scaleX(-1);
+        display: none;
     }
 
     .fondText {
@@ -2441,16 +2515,15 @@ form button {
         left: 20%;
     }
 
-    .contentNull {
-        width: 100vw;
-        height: 40vh;
-    }
-
     /* Testimoniales Main */
+
+    .testimonial-main {
+        margin: 0 5%;
+    }
 
     .testimonial-main-slider {
         max-width: 150rem;
-        height: 22rem;
+        height: 33rem;
         position: relative;
         margin: 5px;
 
@@ -2472,6 +2545,20 @@ form button {
     .testimonial-main-logos li img {
         width: 35%;
         height: auto;
+    }
+
+    .testimonial-main h2 {
+        font-size: 20px;
+    }
+
+    .testimonial-main h2 span {
+        font-size: 25px;
+        padding: 0 1%;
+    }
+
+    .testimonial-contenido {
+        border-width: 1px;
+        padding: 5% 10%;
     }
 
     /* BLOG Main */
@@ -2611,27 +2698,40 @@ form button {
     /* CONOCENOS - nosotros */
 
     .nosotros-conocenos h2 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .nosotros-conocenos p {
         font-size: 13px;
+        margin: 5% 0;
+    }
+
+    .galeria-conocenos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .galeria-conocenos img {
+        width: 40%;
+        height: auto;
+        padding: 5% 1%;
     }
 
     /* CONOCENOS - c2a */
 
     .c2a-conocenos {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     .c2a-conocenos span {
-        font-size: 25px;
+        font-size: 18px;
     }
 
-    /* CONOCENOS - MISION y VISION */
+    /* CONOCENOS - responsive*/
 
     .misvi-conocenos h4 {
-        font-size: 35px;
+        font-size: 15px;
     }
 
     .misvi-conocenos p {
@@ -2640,7 +2740,7 @@ form button {
     }
 
     .conocenos-valores-izq img {
-        width: 45%;
+        width: 90%;
     }
 
     .conocenos-valores-izq img:hover {
@@ -2648,11 +2748,42 @@ form button {
     }
 
     .conocenos-valores-der h4 {
-        font-size: 23px;
+        font-size: 15px;
     }
 
     .conocenos-valores-der p {
         font-size: 12px;
+    }
+
+    .conocenos-valores-der img {
+        width: 20%;
+        height: auto;
+    }
+
+    /* Valores arreglo */
+
+    .nosotros-valores {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 2%;
+    }
+
+    .nosotros-valor img {
+        width: 20%;
+        height: auto;
+    }
+
+    .nosotros-valor h4 {
+        font-size: 1.2rem;
+        color: var(--color1);
+        font-weight: 800;
+        font-family: "Poppins";
+        padding: 5% 0;
+    }
+
+    .nosotros-valor p {
+        font-size: 0.8rem;
+        padding: 5% 15% 10% 15%;
     }
 
     /* PROYECTOS - responsive */
@@ -2882,11 +3013,11 @@ form button {
 
     .footer-colum {
         width: 100%;
-        float: none;
-        display: flex;
-        flex-direction: column;
+        height: auto;
+    }
+
+    .footer-colum nav {
         text-align: center;
-        padding: 5% 0;
     }
 
     .footer-colum h4 {

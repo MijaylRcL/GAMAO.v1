@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Proteccion sismica</title>
+    <title>GAMAO - HABILITACIÓN DE TALLERES ARQUITECTURA</title>
     <link rel="Stylesheet" href="../css/estilos.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,10 +38,10 @@
                     <a href="../conocenos.html">NOSOTROS</a>
                 </li>
                 <li>
-                    <a href="../proyectos.html">OBRAS</a>
+                    <a href="../proyectos.html" class="active">OBRAS</a>
                 </li>
                 <li>
-                    <a href="../servicios.html" class="active">SERVICIOS▾</a>
+                    <a href="../servicios.html">SERVICIOS▾</a>
                     <ul>
                         <li>
                             <a href="../servicios\ejecucion de obras.html">
@@ -90,83 +90,41 @@
         </nav>
 
     </header>
+
     <main>
 
-        <!-- Portada -->
+        <h1 id="titulo-obras">HABILITACIÓN DE TALLERES ARQUITECTURA</h1>
 
-        <section class="portada-servicios-lista">
+        <section class="container galeria">
 
-            <div class="portada-servicios-lista-image">
-                <img src="../imagenes/pngs/servicio-innovacion.png">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\01.JPEG" alt="Galeria Obras">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\02.JPEG" alt="Galeria Obras">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\03.jpg" alt="Galeria Obras">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\04.jpg" alt="Galeria Obras">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\05.jpg" alt="Galeria Obras">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../imagenes\proyecto06\06.JPEG" alt="Galeria Obras">
+                </div>
             </div>
 
-        </section>
-
-        <!-- Contenido -->
-
-        <section class="servicios-contenido">
-
-            <h1>PROTECCIÓN SÍSMICA</h1>
-            <h4>SISTEMAS DE PROTECCIÓN SÍSMICA</h4>
-            <br>
-            <h5>AISLADORES SÍSMICOS DIS EN EL PERÚ</h5>
-            <p>Sabemos que Perú es un país con actividad sísmica, por ello trabajamos en la prevención con sistemas de
-                protección sísmica,
-                Los aisladores sísmicos son una herramienta de alta tecnología que protege una estructura de los efectos
-                destructivos de un sismo. Lo hace separando la base de la edificación de la tierra. Así, los movimientos
-                del suelo producidos por un terremoto o sismo, no afectan la estructura.</p>
-            <br>
-            <h5>DISIPADORES SÍSMICOS TAYLOR EN EL PERÚ</h5>
-            <p>Sistemas de disipación de energía: Los disipadores sísmicos nos hacen posible vivir un terremoto sin
-                daños.
-                Los disipadores viscosos o dampers son elementos que se adosan a los pórticos estructurales, y que en un
-                momento sísmico, disipan energía sísmica a través del paso de fluido viscoso en su interior ocasionando
-                una resistencia al movimiento libre del edificio.
-            </p>
-        </section>
-
-        <!-- Brochure -->
-
-        <section class="banner-main">
-
-            <img src="../imagenes/main-banner.webp">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                <img src="" alt="Imagenes" class="rounded" id="imgModal">
+                </div>
+              </div>
 
         </section>
-
-        <!-- Contacto -->
-
-        <section class="contacto-main">
-
-            <div class="contac-izq">
-
-                <h2>CONSTRUYAMOS JUNTOS</h2>
-                <p>Llene el formulario y un asesor se pondrá en contacto lo más pronto posible.</p>
-
-                <form action="#" method="post" onsubmit="return validarFormulario()">
-                    <label for="nombre_apellido">Nombres y Apellidos <span>*</span></label>
-                    <input type="text" id="nombre_apellido" name="nombre_apellido" required pattern="[a-zA-Z\s]+"
-                        title="Ingrese solo letras y espacios">
-
-                    <label for="correo">Correo Electrónico <span>*</span></label>
-                    <input type="email" id="correo" name="correo" required>
-
-                    <label for="telefono">Número de Teléfono <span>*</span></label>
-                    <input type="tel" id="telefono" name="telefono" required pattern="[0-9]+"
-                        title="Ingrese solo números">
-
-                    <label for="mensaje">Mensaje <span>*</span></label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-
-            <div class="contac-der">
-                <img src="../imagenes/contacto-foto.webp" alt="Pasion por lo que hacemos">
-            </div>
-
-        </section>
-
 
     </main>
 
@@ -207,9 +165,9 @@
                 </div>
                 <br>
                 <div>
-                    <img src="../imagenes/pngs/footer-ubicacion.svg">
-                    <span> URB. TAHUAYCANI MZA B, LOTE
-                        31 – AREQUIPA, PERÚ</span>
+                <img src="../imagenes/pngs/footer-ubicacion.svg">
+                <span> URB. TAHUAYCANI MZA B, LOTE
+                    31 – AREQUIPA, PERÚ</span>                    
                 </div>
             </div>
 
@@ -236,13 +194,11 @@
                     <div class="social-links">
                         <ul class="social-links-footer">
                             <li><a href="https://www.facebook.com/profile.php?id=100071898033005&mibextid=JRoKGi"
-                                    target="_blank"><img src="../imagenes\pngs\logo-facebook.png" alt="Facebook"></a>
-                            </li>
+                                    target="_blank"><img src="../imagenes\pngs\logo-facebook.png" alt="Facebook"></a></li>
                             <li><a href="https://www.youtube.com/channel/UCh9uCWiTPVhhuE2mqW3Uc2g" target="_blank"><img
                                         src="../imagenes\pngs\logo-youtube.png" alt="LinkedIn"></a></li>
                             <li><a href="https://www.linkedin.com/company/gamao-ingenier%C3%ADa-construcci%C3%B3n/"
-                                    target="_blank"><img src="../imagenes\pngs\logo-linkedin.png" alt="Linkedin"></a>
-                            </li>
+                                    target="_blank"><img src="../imagenes\pngs\logo-linkedin.png" alt="Linkedin"></a></li>
                         </ul>
                     </div>
 
@@ -254,13 +210,23 @@
 
             </div>
             <div class="firma-footer">
-                <span>© 2024 | Todos los derechos reservados – Web realizada por: <a href="https://ciclope.studio/"
-                        target="_blank">Ciclope.Studio</a></span>
+                <span>© 2024 | Todos los derechos reservados – Web realizada por: <a
+                        href="https://ciclope.studio/" target="_blank">Ciclope.Studio</a></span>
             </div>
 
         </section>
 
     </footer>
+    <script src="../javascript/galeria.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
 
-    <script src="../javascript/efectos.js"></script>
 </body>
+</html>
