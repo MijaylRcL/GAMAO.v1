@@ -229,7 +229,7 @@ const fondText = document.getElementById('FondText-text');
 
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY;
-    fondText.style.transform = `translate(calc(50% - ${scrolled}px))`;
+    fondText.style.transform = `translate(calc(45% - ${scrolled}px))`;
 });
 
 /*----Validad Formulario---*/

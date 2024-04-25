@@ -1,45 +1,648 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Count Up Animation</title>
-    <!-- FontAwesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/contador.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
-        <i class="fas fa-utensils"></i>
-        <span class="num" data-val="400">000</span>
-        <span class="text">Meals Delivered</span>
-      </div>
-      <div class="container">
-        <i class="fas fa-smile-beam"></i>
-        <span class="num" data-val="340">000</span>
-        <span class="text">Happy Customers</span>
-      </div>
-      <div class="container">
-        <i class="fas fa-list"></i>
-        <span class="num" data-val="225">000</span>
-        <span class="text">Menu Items</span>
-      </div>
-      <div class="container">
-        <i class="fas fa-star"></i>
-        <span class="num" data-val="280">000</span>
-        <span class="text">Five Stars</span>
-      </div>
+<html lang="Es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web GAMAO</title>
+  <link rel="Stylesheet" href="css/estilos.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header class="header" id="header-sticky">
+
+    <a href="index.html" class="logo-main">
+      <object data="imagenes\pngs\gamao-logo-svg.svg" type="image/svg+xml" class="logo-icono"></object>
+    </a>
+
+    <div class="hamburger-main">
+      <div class="line-main"></div>
+      <div class="line-main"></div>
+      <div class="line-main"></div>
     </div>
-    <!-- Script -->
-    <script src="javascript/contador.js"></script>
-  </body>
-</html>
+    <nav class="nav-bar">
+      <ul>
+        <li>
+          <a href="index.html" class="active">INICIO</a>
+        </li>
+        <li>
+          <a href="conocenos.html">NOSOTROS</a>
+        </li>
+        <li>
+          <a href="proyectos.html">OBRAS</a>
+        </li>
+        <li>
+          <a href="servicios.html">SERVICIOS▾</a>
+          <ul>
+            <li>
+              <a href="servicios\ejecucion de obras.html">
+                <img src="imagenes/pngs/servicio-ejecucion-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\elaboracion de proyectos.html">
+                <img src="imagenes/pngs/servicio-proyectos-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\mantenimiento y remodelacion.html">
+                <img src="imagenes/pngs/servicio-mantenimiento-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\reforzamiento estructural.html">
+                <img src="imagenes/pngs/servicio-reforzamiento-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\obras de arte en infraestructura.html">
+                <img src="imagenes/pngs/servicio-arte-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\proteccion sismica.html">
+                <img src="imagenes/pngs/servicio-innovacion-azul.png">
+              </a>
+            </li>
+            <li>
+              <a href="servicios\alquiler de equipos.html">
+                <img src="imagenes/pngs/servicio-alquiler-azul.png">
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="actualidad.html">ACTUALIDAD</a>
+        </li>
+        <li>
+          <a href="contactenos.html">CONTÁCTENOS</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Portada Pantalla Completa -->
+
+    <section class="portada-main">
+
+      <h1>GAMAO INGENIERIA & CONSTRUCCIÓN S.A.C.</h1>
+      <p>CONSTRUYENDO CONFIANZA: <br>
+        FUNDAMENTOS INQUEBRANTABLES</p>
+      <a href="contactenos.html"><button>CONSTRUYAMOS JUNTOS</button></a>
+
+    </section>
+
+
+    <!-- Nosotros -->
+
+    <section class="nosotros-main">
+      <div class="nosotros-main-s1">
+        <li>
+          <img src="imagenes/main-nosotros.jpg" alt="Somos expertos en construicción" loading="lazy">
+        </li>
+      </div>
+      <div class="nosotros-main-s2">
+        <li class="texto-nosotros-main">
+          <h2>CONSTRUYENDO EL FUTURO CON INNOVACIÓN: <span>CIMIENTOS DEL PROGRESO</span></h2>
+          <p>GAMAO Ingeniería & Construcción S.A.C., surge con la única idea de aportar soluciones integrales
+            para resolver los problemas más difíciles en el campo de la ingeniería, con el objetivo de
+            brindar servicios de excelente calidad y de esta manera contribuir en el desarrollo económico y
+            social del Perú; es una empresa que cuenta con un equipo de trabajo con un alto nivel en su
+            formación profesional y ética.</p>
+          <a href="conocenos.html"><button class="nosotros-boton">SABER MÁS</button></a>
+        </li>
+      </div>
+
+    </section>
+
+    <!-- Nosotros-Slider -->
+
+    <section class="slider-main">
+      <div class="wrapper">
+        <div class="item-wrapper">
+          <img src="imagenes/conocenos-galeria03.webp">
+        </div>
+        <div class="item-wrapper">
+          <img src="imagenes/conocenos-galeria04.webp">
+        </div>
+        <div class="item-wrapper">
+          <img src="imagenes/main-nosotros01.webp">
+        </div>
+        <div class="item-wrapper">
+          <img src="imagenes/conocenos-galeria03.webp">
+        </div>
+        <div class="item-wrapper">
+          <img src="imagenes/conocenos-galeria04.webp">
+        </div>
+        <div class="item-wrapper">
+          <img src="imagenes/main-nosotros01.webp">
+        </div>
+      </div>
+    </section>
+
+    <!-- Contador -->
+
+    <section class="contador-main">
+      <ul class="wrapper-main">
+        <li>
+          <div class="container-main">
+            <div class="container-main-simbolo">
+              <span class="num" data-val="30">000</span>
+              <p>+</p>
+            </div>
+            <span class="text">Años de<br>expeciencia<br>en nuestro<br>equipo</span>
+          </div>
+        </li>
+        <li>
+          <div class="container-main">
+            <div class="container-main-simbolo">
+              <span class="num" data-val="40">000</span>
+              <p>+</p>
+            </div>
+            <span class="text">Número de<br>proyectos<br>entregados</span>
+          </div>
+        </li>
+        <li>
+          <div class="container-main">
+            <div class="container-main-simbolo">
+              <span class="num" data-val="450">000</span>
+              <p>+</p>
+            </div>
+            <span class="text">Empléos<br>generados</span>
+          </div>
+        </li>
+        <li>
+          <div class="container-main">
+            <div class="container-main-simbolo">
+              <span class="num" data-val="100">000</span>
+              <p>%</p>
+            </div>
+            <span class="text">Clientes<br>satisfechos</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Servicios -->
+
+    <div class="titulo-generico">
+      <h2><span>SERVICIOS</span></h2>
+    </div>
+
+    <section class="servicios-main">
+      <div class="container-servici">
+        <a href="servicios\ejecucion de obras.html" class="card">
+          <img src="imagenes/pngs/servicio-ejecucion-azul.png" alt="" class="icon">
+          <img src="imagenes/main - ejecucion de obras.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\elaboracion de proyectos.html" class="card">
+          <img src="imagenes/pngs/servicio-proyectos-azul.png" alt="" class="icon">
+          <img src="imagenes/main - elaboracion de proyectos.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\mantenimiento y remodelacion.html" class="card">
+          <img src="imagenes/pngs/servicio-mantenimiento-azul.png" alt="" class="icon">
+          <img src="imagenes/main - mantenimiento.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\reforzamiento estructural.html" class="card">
+          <img src="imagenes/pngs/servicio-reforzamiento-azul.png" alt="" class="icon">
+          <img src="imagenes/main - reforzamiento.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\obras de arte en infraestructura.html" class="card">
+          <img src="imagenes/pngs/servicio-arte-azul.png" alt="" class="icon">
+          <img src="imagenes/main - obras de arte.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\proteccion sismica.html" class="card">
+          <img src="imagenes/pngs/servicio-innovacion-azul.png" alt="" class="icon">
+          <img src="imagenes/main - proteccion.webp" alt="" class="imgFond">
+        </a>
+        <a href="servicios\alquiler de equipos.html" class="card">
+          <img src="imagenes/pngs/servicio-alquiler-azul.png" alt="" class="icon">
+          <img src="imagenes/main - alquiler.webp" alt="" class="imgFond">
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Servicios Mobile -->
+
+    <section class="servicios-mobil">
+
+      <a href="servicios\ejecucion de obras.html">
+        <div class="tarjeta tarjeta1">
+          <img src="imagenes/pngs/mobil-ejecucion-obras.svg">
+        </div>
+      </a>
+
+      <a href="servicios\elaboracion de proyectos.html">
+        <div class="tarjeta tarjeta2">
+          <img src="imagenes/pngs/mobil-proyectos.svg">
+        </div>
+      </a>
+
+      <a href="servicios\mantenimiento y remodelacion.html">
+        <div class="tarjeta tarjeta3">
+          <img src="imagenes/pngs/mobil-ejecucion-servicios.svg">
+        </div>
+      </a>
+
+      <a href="servicios\reforzamiento estructural.html">
+        <div class="tarjeta tarjeta4">
+          <img src="imagenes/pngs/mobil-reforzamiento.svg">
+        </div>
+      </a>
+
+      <a href="servicios\obras de arte en infraestructura.html">
+        <div class="tarjeta tarjeta5">
+          <img src="imagenes/pngs/mobil-arte.svg">
+        </div>
+      </a>
+
+      <a href="servicios\proteccion sismica.html">
+        <div class="tarjeta tarjeta6">
+          <img src="imagenes/pngs/mobil-sismica.svg">
+        </div>
+      </a>
+
+      <a href="servicios\alquiler de equipos.html">
+        <div class="tarjeta tarjeta7">
+          <img src="imagenes/pngs/mobil-alquiler.svg">
+        </div>
+      </a>
+
+    </section>
+
+    <!-- Brochure -->
+
+    <section class="banner-main">
+
+      <img src="imagenes/main-banner.webp" loading="lazy">
+      <br><br><br><br><br>
+
+    </section>
+
+    <!-- Proyectos -->
+
+    <div class="titulo-generico">
+      <h2>Nuestros <br> <span>PROYECTOS</span></h2>
+    </div>
+
+    <section class="proyectos-main">
+
+      <div class="container-proyectos">
+        <div class="slider-text">
+          <h3>NOS RESPALDA</h3>
+          <p>Nuestra pasión, respaldada
+            por la confianza, es dar vida
+            a la visión de nuestros
+            clientes, ya sea revitalizando
+            un espacio existente o
+            construyendo desde cero.</p>
+        </div>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="section-slider">
+              <img src="imagenes/Proyectos/proyecto03.webp" alt="" class="slider-img"><br>
+              <span>REFORZAMIENTO ESTRUCTURAL</span>
+            </div>
+            <div class="section-slider">
+              <img src="imagenes/Proyectos/proyecto01.webp" alt="" class="slider-img"><br>
+              <span>COBERTURA PARA EVENTOS</span>
+            </div>
+            <div class="section-slider">
+              <img src="imagenes/Proyectos/proyecto02.webp" alt="" class="slider-img"><br>
+              <span>ALMACEN DE TECNOLOGIA DE LA INFORMACION</span>
+            </div>
+            <div class="section-slider">
+              <img src="imagenes/Proyectos/proyecto04.webp" alt="" class="slider-img"><br>
+              <span>HABILITACIÓN DE LABORATORIO</span>
+            </div>
+            <img src="imagenes/pngs/flecha-derecha.jpg" class="slider-btn slider-btn-R" id="BtnR"></img>
+            <img src="imagenes/pngs/flecha-izquierda.jpg" class="slider-btn slider-btn-L" id="BtnL"></img>
+          </div>
+        </div>
+        <div class="fondText">
+          <p id="FondText-text">Audentes fortuna iuvat</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Testimoniales -->
+
+    <section class="testimonial-main">
+
+      <h2>CONFIARON EN NUESTRA <br> <span>CALIDAD Y COMPROMISO</span></h2>
+
+      <ul class="testimonial-main-logos">
+        <li>
+          <img src="imagenes/pngs/logo-padre.png">
+          <span>Padre Damian<br>de los<br>Sagrados Corazones</span>
+        </li>
+        <li>
+          <img src="imagenes/pngs/logo-sanna.png">
+          <span>SANNA<br>Clínica del Sur</span>
+        </li>
+        <li>
+          <img src="imagenes/pngs/logo-cultural.png">
+          <span>Centro Cultural<br>Peruano<br>Norteamericano</span>
+        </li>
+        <li>
+          <img src="imagenes/pngs/logo-ucsp.png">
+          <span>Universidad<br>Catolica<br>San Pablo</span>
+        </li>
+      </ul>
+
+      <div class="testimonial-main-carrusel" id="testimonial-id-main">
+
+        <div class="testimonial-main-slider">
+
+          <div class="slide-testi slide-testi--1">
+
+            <div class="testimonial01">
+
+              <div class="testimonial-contenido">
+                <h5>Padre Damián de los sagrados Corazones.</h5><br>
+                <blockquote class="testimonial-text">
+                  Como directivos de la Institución Educativa Padre Damián, quedamos gratamente
+                  impresionados con el trabajo realizado por la empresa GAMAO. Su enfoque
+                  innovador y compromiso con la calidad nos permitió transformar nuestros espacios
+                  educativos de manera excepcional. La puntualidad en la entrega, la comunicación
+                  clara en cada etapa del proyecto y la ética laboral demostrada por todo el equipo
+                  nos dejaron completamente satisfechos."
+                </blockquote>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slide-testi slide-testi--2">
+
+            <div class="testimonial01">
+
+              <div class="testimonial-contenido">
+                <h5>Universidad Catolica San Pablo</h5><br>
+                <blockquote class="testimonial-text">
+                  "La Universidad Católica San Pablo confió en la empresa constructora GAMAO para
+                  llevar a
+                  cabo una ambiciosa tarea de remodelación y reforzamiento de nuestras instalaciones.
+                  Estamos impresionados por la habilidad de su equipo para combinar innovación con
+                  disciplina y ética laboral. Su puntualidad en cada fase del proyecto y la
+                  comunicación fluida nos brindaron la tranquilidad de saber que estábamos en buenas
+                  manos."
+                </blockquote>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slide-testi slide-testi--3">
+
+            <div class="testimonial01">
+
+              <div class="testimonial-contenido">
+                <h5>SANNA Clínica del Sur</h5><br>
+                <blockquote class="testimonial-text">
+                  "La Clínica SANNA confió en la experiencia y profesionalismo de GAMAO para llevar a
+                  cabo una importante remodelación de nueustras instalaciones. Nos impresionó su
+                  enfoque innovador y meticuloso, así como su compromiso con la puntualidad. La
+                  comunicación clara y constante durante todo el proceso nos brindó
+                  tranquilidad y confianza en el resultado final."
+                </blockquote>
+              </div>
+
+            </div>
+
+          </div>
+
+          <button class="slide-testi__btn slide-testi__btn--left">&#5176;</button>
+          <button class="slide-testi__btn slide-testi__btn--right">&#5171;</button>
+          <div class="dots"></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Brochure -->
+
+    <section class="banner-main">
+      <br>
+      <br>
+      <br>
+      <img src="imagenes/banner-galma-main.webp">
+
+    </section>
+
+    <!-- Blog -->
+
+    <div class="titulo-generico">
+      <h2>Nuestros <br> <span>BLOGS</span></h2>
+    </div>
+
+    <section class="blog-main">
+
+      <div class="izq-blog-main">
+        <img src="imagenes/pngs/gamao-news.png">
+      </div>
+
+      <div class="der-blog-main">
+
+        <div class="blog-resume">
+
+          <div class="blog-resume-img">
+            <img src="imagenes/blog-demo.webp">
+          </div>
+          <div class="blog-resume-text">
+            <span>NOTICIA</span>
+            <h5>Titulo del Blog</h5>
+            <p>Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod
+              tincidunt ut laoreet dolore </p>
+            <button>Ir al blog</button>
+          </div>
+        </div>
+
+        <div class="blog-resume">
+
+          <div class="blog-resume-img">
+            <img src="imagenes/blog-demo.webp">
+          </div>
+          <div class="blog-resume-text">
+            <span>NOTICIA</span>
+            <h5>Titulo del Blog</h5>
+            <p>Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod
+              tincidunt ut laoreet dolore </p>
+            <button>Ir al blog</button>
+          </div>
+        </div>
+
+        <div class="blog-resume">
+
+          <div class="blog-resume-img">
+            <img src="imagenes/blog-demo.webp">
+          </div>
+          <div class="blog-resume-text">
+            <span>NOTICIA</span>
+            <h5>Titulo del Blog</h5>
+            <p>Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit, sed
+              diam nonummy nibh euismod
+              tincidunt ut laoreet dolore </p>
+            <button>Ir al blog</button>
+          </div>
+        </div>
+
+        <a href="actualidad.html">
+          <button class="boton-blog">VER TODAS LAS NOTICIAS Y BLOGS</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+
+    <section class="contacto-main">
+
+      <div class="contac-izq">
+
+        <h2>CONSTRUYAMOS JUNTOS</h2>
+        <p>Llene el formulario y un asesor se pondrá en contacto lo más pronto posible.</p>
+
+        <form action="#" method="post" onsubmit="return validarFormulario()">
+          <label for="nombre_apellido">Nombres y Apellidos <span>*</span></label>
+          <input type="text" id="nombre_apellido" name="nombre_apellido" required pattern="[a-zA-Z\s]+"
+            title="Ingrese solo letras y espacios">
+
+          <label for="correo">Correo Electrónico <span>*</span></label>
+          <input type="email" id="correo" name="correo" required>
+
+          <label for="telefono">Número de Teléfono <span>*</span></label>
+          <input type="tel" id="telefono" name="telefono" required pattern="[0-9]+" title="Ingrese solo números">
+
+          <label for="mensaje">Mensaje <span>*</span></label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <div class="submit-main">
+            <input type="submit" value="Enviar" id="submit-main">
+          </div>
+        </form>
+      </div>
+
+      <div class="contac-der">
+        <img src="imagenes/contacto-foto.webp" alt="Pasion por lo que hacemos">
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <section class="footer">
+
+      <div class="footer-colum">
+        <h4>EXPLORA</h4>
+        <nav>
+          <ul>
+            <li><a href="index.html">INICIO</a></li><br>
+            <li><a href="conocenos.html">NOSOTROS</a></li><br>
+            <li><a href="proyectos.html">OBRAS</a></li><br>
+            <li><a href="servicios.html">SERVICIOS</a></li><br>
+            <li><a href="actualidad.html">BLOG & NEWS</a></li><br>
+            <li><a href="contactenos.html">CONTÁCTENOS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-colum">
+        <h4>CONTÁCTENOS</h4>
+        <span>ESCRIBIRNOS O LLAMARNOS, UN ASESOR ESTARÁ
+          DISPONIBLE PARA ATENDERTE LO MÁS PRONTO POSIBLE:</span>
+        <div class="telefonos-footer">
+          <img src="imagenes/pngs/footer-celular.svg">
+          <span> +51 987 687 626</span>
+          <img src="imagenes/pngs/footer-telefono.svg">
+          <span> +54 657411</span>
+        </div>
+        <br>
+        <div>
+          <img src="imagenes/pngs/footer-correo.svg">
+          <span> CONTACTENOS@GAMAO.COM.PE</span>
+        </div>
+        <br>
+        <div>
+          <img src="imagenes/pngs/footer-ubicacion.svg">
+          <span> URB. TAHUAYCANI MZA B, LOTE
+            7 – AREQUIPA, PERÚ</span> <br>
+          <img src="imagenes/pngs/footer-ubicacion.svg">
+          <span> URB. TAHUAYCANI MZA B, LOTE
+            31 – AREQUIPA, PERÚ</span>
+        </div>
+      </div>
+
+      <div class="footer-colum">
+        <h4>SUBSCRÍBETE</h4>
+        <span>¡SUSCRÍBETE AHORA A NUESTRO BOLETÍN INFORMATIVO Y
+          MANTENTE AL TANTO DE LAS ÚLTIMAS NOVEDADES,
+          TENDENCIAS Y CONSEJOS EN EL MUNDO DE LA
+          CONSTRUCCIÓN!</span>
+
+        <form class="formulario-footer" action="correo-footer">
+          <label for="correo">Correo Electrónico <span>*</span></label>
+          <input type="email" id="correo" name="correo" required>
+          <input type="submit" value="Enviar" id="submit-footer">
+        </form>
+      </div>
+
+      <div class="footer-colum">
+
+        <div class="footer-redes">
+
+          <img src="imagenes/pngs/logo-gamao-blanco.png" alt="Somos expertos en construicción">
+
+          <div class="social-links">
+            <ul class="social-links-footer">
+              <li><a href="https://www.facebook.com/profile.php?id=100071898033005&mibextid=JRoKGi" target="_blank"><img
+                    src="imagenes\pngs\logo-facebook.png" alt="Facebook"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCh9uCWiTPVhhuE2mqW3Uc2g" target="_blank"><img
+                    src="imagenes\pngs\logo-youtube.png" alt="LinkedIn"></a></li>
+              <li><a href="https://www.linkedin.com/company/gamao-ingenier%C3%ADa-construcci%C3%B3n/"
+                  target="_blank"><img src="imagenes\pngs\logo-linkedin.png" alt="Linkedin"></a></li>
+            </ul>
+          </div>
+
+          <div class="reclamaciones-footer">
+            <img src="imagenes\pngs\libro reclamaciones.png" alt="Libro de reclamaciones">
+            <a href="reclamos.html">Libro de Reclamaciones</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="firma-footer">
+        <span>© 2024 | Todos los derechos reservados – Web realizada por: <a
+            href="https://ciclope.studio/">Ciclope.Studio</a></span>
+      </div>
+
+    </section>
+
+  </footer>
+
+  <script src="javascript/efectos.js"></script>
+</body>

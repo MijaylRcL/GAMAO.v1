@@ -27,13 +27,27 @@
     opacity: 100%;
 }
 
+.logo-main {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    fill: #ffff;
+}
+
+.logo-icono {
+    width: 40%; /* Ancho del icono */
+    height: auto; /* Altura del icono */
+    fill: var(--blanco); /* Cambia el color del icono a rojo */
+    cursor: pointer;
+}
+
 .logo-main img {
-    width: 70%;
+    width: 60%;
     height: auto;
     position: sticky;
-    background: var(--blanco);
     padding: 2% 10px;
     cursor: pointer;
+    fill: var(--blanco);
 }
 
 .hamburger-main {
@@ -517,6 +531,10 @@
     transition: opacity var(--timeAni) ease;
 }
 
+.servicios-mobil {
+    display: none;
+}
+
 /* Banner-Main */
 
 .banner-main {
@@ -687,11 +705,10 @@
 
 .fondText p {
     margin: 0;
-    font-size: 10rem;
+    font-size: 15rem;
     font-weight: bold;
-    color: var(--gris);
+    color: var(--color1);
     top: 0;
-    left: 20%;
 }
 
 /* Testimonail-main */
@@ -757,9 +774,9 @@
 
 .testimonial-main-slider {
     max-width: 150rem;
-    height: 22rem;
+    height: 18rem;
     position: relative;
-    margin: 5px 150px;
+    margin: 12vh 150px;
 
     /* IN THE END */
     overflow: hidden;
@@ -1383,7 +1400,7 @@ form button {
 .misvi-conocenos {
     display: flex;
     flex-direction: column;
-    margin: 2% 20%;
+    margin: 5% 20%;
     background: linear-gradient(to bottom, #1b04af 0%, #080135 100%);
     padding: 2% 0 5% 0;
 }
@@ -1516,7 +1533,7 @@ form button {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1% 10%;
+    padding: 5% 10%;
 }
 
 .nosotros-valor {
@@ -1539,7 +1556,7 @@ form button {
 }
 
 .nosotros-valor p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--color1);
     font-weight: 400;
     font-family: "Poppins";
@@ -1598,6 +1615,8 @@ form button {
     position: relative;
     overflow: hidden;
     z-index: 2;
+    margin: 3%;
+    padding-bottom: 40px;
 }
 
 .slider {
@@ -2272,6 +2291,10 @@ form button {
         display: none;
     }
 
+    .nav-bar li ul img {
+        display: none;
+    }
+
     /* Portada - Main */
 
     .portada-main {
@@ -2324,6 +2347,7 @@ form button {
     .nosotros-main-s1 img {
         width: 100%;
         height: auto;
+        padding: 15% 0 10% 0;
     }
 
     .nosotros-main-s2 {
@@ -2333,30 +2357,51 @@ form button {
 
     .nosotros-main-s2 h2 {
         font-size: 25px;
+        padding-bottom: 3%;
     }
 
     .nosotros-main-s2 span {
-        font-size: 23px;
+        font-size: 25px;
     }
 
     .nosotros-main-s2 p {
         font-size: 14px;
     }
 
+    /* Nosotros Slider */
+
+    .slider-main {
+        padding: 0 3%;
+        margin-bottom: 1%;
+    }
+
+    .item-wrapper {
+        animation: animate 20s alternate linear infinite;
+        padding: 10px;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    .item-wrapper img {
+        width: auto;
+        height: 150px;
+    }
+
     /* Contador Main */
 
     .contador-main {
-        width: 90%;
-        margin-right: 10%;
+        width: 100%;
     }
 
     .wrapper-main {
-        width: 100%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 15% 0 10% 0;
     }
 
     .container-main {
@@ -2364,47 +2409,74 @@ form button {
         margin: 20% 0;
     }
 
-    .container-main-simbolo {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .container-main-simbolo p {
-        display: flex;
-        flex-direction: column;
-        color: var(--blanco);
-        font-size: 45px;
-        font-weight: 900;
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-        font-style: italic;
-    }
-
-    .num {
-        display: flex;
-        flex-direction: column;
-        color: var(--blanco);
-        font-size: 45px;
-        font-weight: 900;
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-        font-style: italic;
-    }
-
-    .text {
-        color: var(--blanco);
-        font-family: "Poppins";
-        text-align: center;
-        font-size: 14px;
-        font-weight: 350;
-        padding-top: 5px;
-    }
-
     /* Servicios-Main */
 
-    .icon {
+    .servicios-main {
+        display: none;
+    }
+
+    .servicios-mobil {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        margin-top: 5%;
+    }
+
+    .tarjeta {
         width: auto;
-        height: 6%;
+        height: 25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border: solid;
+        border-color: var(--color2);
+        margin: 5px 20px;
+        overflow: hidden
+    }
+
+    .tarjeta img {
+        width: 80%;
+        height: auto;
+        display: block;
+        padding: 5% 0;
+    }
+
+    .tarjeta1 {
+        background-image: url("../imagenes/main - ejecucion de obras.webp");
+        background-size: cover;
+    }
+
+    .tarjeta2 {
+        background-image: url("../imagenes/main - elaboracion de proyectos - mobile.webp");
+        background-size: cover;
+    }
+
+    .tarjeta3 {
+        background-image: url("../imagenes/main - mantenimiento.webp");
+        background-size: cover;
+    }
+
+    .tarjeta4 {
+        background-image: url("../imagenes/main - reforzamiento.webp");
+        background-size: cover;
+    }
+
+    .tarjeta5 {
+        background-image: url("../imagenes/main - obras de arte.webp");
+        background-size: cover;
+    }
+
+    .tarjeta6 {
+        background-image: url("../imagenes/main - proteccion.webp");
+        background-size: cover;
+    }
+
+    .tarjeta7 {
+        background-image: url("../imagenes/main - alquiler - mobile.webp");
+        background-size: cover;
     }
 
     /* Proyectos Main */
@@ -2523,9 +2595,9 @@ form button {
 
     .testimonial-main-slider {
         max-width: 150rem;
-        height: 33rem;
+        height: 30rem;
         position: relative;
-        margin: 5px;
+        margin: 50px 5px;
 
         /* IN THE END */
         overflow: hidden;
@@ -2549,6 +2621,7 @@ form button {
 
     .testimonial-main h2 {
         font-size: 20px;
+        padding: 10% 0; 
     }
 
     .testimonial-main h2 span {
@@ -2558,7 +2631,7 @@ form button {
 
     .testimonial-contenido {
         border-width: 1px;
-        padding: 5% 10%;
+        padding: 7%;
     }
 
     /* BLOG Main */
@@ -2730,13 +2803,19 @@ form button {
 
     /* CONOCENOS - responsive*/
 
+    .misvi-conocenos {
+        margin: 10% 15%;
+    }
+
     .misvi-conocenos h4 {
-        font-size: 15px;
+        font-size: 20px;
+        padding: 10% 0;
     }
 
     .misvi-conocenos p {
         font-size: 14px;
-        font-weight: 100;
+        font-weight: 200;
+        padding: 5% 10%;
     }
 
     .conocenos-valores-izq img {
