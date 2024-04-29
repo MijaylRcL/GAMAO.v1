@@ -20,7 +20,7 @@
     background: transparent;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 100px;
     position: fixed;
     z-index: 10;
@@ -28,26 +28,21 @@
 }
 
 .logo-main {
-    width: 30%;
-    height: auto;
     cursor: pointer;
-    fill: #ffff;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+}
+
+.logo-main a {
+    background-color: #af202b;
 }
 
 .logo-icono {
-    width: 40%; /* Ancho del icono */
+    width: 100%; /* Ancho del icono */
     height: auto; /* Altura del icono */
-    fill: var(--blanco); /* Cambia el color del icono a rojo */
+    fill: white; /* Cambia el color del icono a rojo */
     cursor: pointer;
-}
-
-.logo-main img {
-    width: 60%;
-    height: auto;
-    position: sticky;
-    padding: 2% 10px;
-    cursor: pointer;
-    fill: var(--blanco);
 }
 
 .hamburger-main {
@@ -56,6 +51,9 @@
 
 .nav-bar ul {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .nav-bar ul li a {
@@ -66,17 +64,6 @@
     font-weight: 700;
     padding: 5px 15px;
     transition: 0.2s;
-}
-
-.nav-bar ul :nth-child(6) {
-    background-color: var(--color2);
-    padding-top: 2px;
-    margin-left: 10%;
-}
-
-.nav-bar ul :nth-child(6) :hover {
-    color: var(--blanco);
-    border: none;
 }
 
 .nav-bar ul li a:hover {
@@ -92,6 +79,19 @@
     border-color: var(--color2);
 }
 
+.nav-bar ul li button {
+    width: 100%;
+    height: auto;
+    background-color: var(--color2);
+    color: var(--blanco);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Poppins";
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+}
+
 /* Minimenu Header */
 
 .nav-bar li ul {
@@ -103,20 +103,6 @@
     background-color: var(--blanco);
     padding-left: 1%;
     border-top: 0;
-}
-
-.nav-bar li ul :nth-child(6) {
-    display: flex;
-    margin-left: 0;
-    background-color: transparent;
-    width: 30%;
-    height: auto;
-}
-
-.nav-bar li ul :nth-child(6) :hover {
-    width: 100%;
-    height: auto;
-    transition: 0.5s;
 }
 
 .nav-bar li ul img {
