@@ -24,7 +24,7 @@ function addHeaderSticky() {
 
 /*----Slider Portada Index---*/
 
-const imagenesFondo = ['../imagenes/portada-index-01.webp', '../imagenes/portada-index-02.png', '../imagenes/portada-index-03.webp']; // Agrega aquí la lista de tus imágenes de fondo
+const imagenesFondo = ['imagenes/portada-index-01.webp', 'imagenes/portada-index-02.png', 'imagenes/portada-index-03.webp']; // Agrega aquí la lista de tus imágenes de fondo
 let indiceImagen = 0;
 
 function cambiarFondo() {
