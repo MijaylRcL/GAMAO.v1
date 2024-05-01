@@ -278,6 +278,8 @@
     display: inline-block;
     overflow: hidden;
     background-image: url("../imagenes/portada-index-01.webp");
+    background-position: center;
+    background-repeat: no-repeat;
     transition: background-image 0.5s ease;
     border: none;
 }
