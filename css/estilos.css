@@ -2337,10 +2337,12 @@ form button {
     background: linear-gradient(to right, #af202b 0%, #080135 100%);
 }
 
-.galeria {
+.container-galeria {
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .row {
@@ -2355,7 +2357,7 @@ form button {
     padding: 5% 2%;
 }
 
-.galeria .col-lg-4 {
+.container-galeria .col-lg-4 {
     width: 50%;
     height: auto;
     margin: 0;
@@ -2364,13 +2366,13 @@ form button {
     justify-content: center;
 }
 
-.galeria img {
-    width: 70%;
-    height: auto;
+.container-galeria img {
+    width: 90%;
+    height: 90%;
     filter: grayscale(98%);
 }
 
-.galeria img:hover {
+.container-galeria img:hover {
     filter: none;
     transition: 1.5s;
 }
@@ -2503,15 +2505,26 @@ form button {
     .nav-bar.active ul {
         opacity: 1;
     }
-
+    
     .nav-bar ul li a {
+        display: block;
         color: var(--color1);
-        padding: 15px;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 10px 5px;
+        transition: 0.2s;
     }
 
     .logo-main img {
         width: 70%;
         height: auto;
+    }
+
+    .nav-bar button {
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 5px 10px;
     }
 
     /* Minimenu Header */
@@ -3253,6 +3266,7 @@ form button {
     .portada-contactanos h1 {
         font-size: 40px;
         font-weight: 700;
+        text-align: center;
     }
 
     .portada-contactanos p {
@@ -3455,5 +3469,92 @@ form button {
     .whatsapp img {
         width: 15%;
         height: auto;
+    }
+
+    /* Galeria Obras */
+
+    #titulo-obras {
+        font-size: 1.3rem;
+        font-weight: 800;
+        padding: 35% 5% 15% 5%;
+    }
+
+    .container-galeria {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+
+    .row {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding: 5% 2%;
+    }
+
+    .container-galeria .col-lg-4 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-galeria img {
+        width: 100%;
+        height: auto;
+        filter: grayscale(98%);
+    }
+
+    .container-galeria img:hover {
+        filter: none;
+        transition: 1.5s;
+    }
+
+    /* BLOG lectura - estilos */
+
+    .img-portada-blog {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-portada-blog img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .contenido-blog {
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido-blog p {
+        color: var(--color1);
+        font-family: "Poppins";
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-align: justify;
+        padding: 10% 0;
+    }
+
+    .contenido-blog img {
+        width: 80%;
+        height: auto;
+        margin: 3% 0;
     }
 }
