@@ -22,6 +22,18 @@ function addHeaderSticky() {
   }
 }
 
+/*----Slider Portada Index---*/
+
+const imagenesFondo = ['../imagenes/portada-index-01.webp', '../imagenes/portada-index-02.png', '../imagenes/portada-index-03.webp']; // Agrega aquí la lista de tus imágenes de fondo
+let indiceImagen = 0;
+
+function cambiarFondo() {
+    document.querySelector('.portada-index').style.backgroundImage = `url(${imagenesFondo[indiceImagen]})`;
+    indiceImagen = (indiceImagen + 1) % imagenesFondo.length;
+}
+
+setInterval(cambiarFondo, 3000);
+
 /*----Contador---*/
 
 let valueDisplays = document.querySelectorAll(".num");
