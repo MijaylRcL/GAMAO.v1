@@ -141,12 +141,12 @@
         <section class="formulario-contactanos">
 
             <div class="imagen-contactenos">
-                <img src="imagenes/contactenos-imagen.webp">
+                <img src="imagenes/training-imagen.webp">
             </div>
 
             <div class="formulario-contactenos">
 
-                <form action="https://formsubmit.co/gamaoicsac@gmail.com" method="post" onsubmit="return validarFormulario()">
+                <form action="https://formsubmit.co/comercial.gamao@gmail.com" method="post" onsubmit="return validarFormulario()">
 
                     <label for="nombre_apellido">Nombres y Apellidos <span>*</span></label>
                     <input type="text" id="nombre_apellido" name="nombre_apellido" required pattern="[a-zA-Z\s]+"
@@ -213,31 +213,27 @@
           <h4>CONTÁCTENOS</h4>
           <span>ESCRIBIRNOS O LLAMARNOS, UN ASESOR ESTARÁ
             DISPONIBLE PARA ATENDERTE LO MÁS PRONTO POSIBLE:</span>
-          <div class="telefonos-footer">
+          <div class="footer-informacion">
             <img src="imagenes/pngs/footer-celular.svg">
             <span> +51 987 687 626</span>
             <img src="imagenes/pngs/footer-telefono.svg">
             <span> +54 657411</span>
           </div>
           <br>
-          <div>
+          <div class="footer-informacion">
             <img src="imagenes/pngs/footer-correo.svg">
             <span> CONTACTENOS@GAMAO.COM.PE</span>
           </div>
           <br>
-          <div>
+          <div class="footer-informacion">
+            <img src="imagenes/pngs/footer-ubicacion.svg">
+            <span> URB. TAHUAYCANI II MZA B, LOTE
+              13 | AREQUIPA, PERÚ</span> <br>
             <img src="imagenes/pngs/footer-ubicacion.svg">
             <span> URB. TAHUAYCANI MZA B, LOTE
-              7 – AREQUIPA, PERÚ</span> <br>
-            <img src="imagenes/pngs/footer-ubicacion.svg">
-            <span> URB. TAHUAYCANI MZA B, LOTE
-              31 – AREQUIPA, PERÚ</span>
+              31 - 2° Piso | AREQUIPA, PERÚ</span>
           </div>
   
-          <a href="training.html" class="boton-training">
-            <button>TRAINING</button>
-            <span>Entrenamiento para egresados/bachilleres</span>
-          </a>
         </div>
   
         <div class="footer-colum">
@@ -247,12 +243,17 @@
             TENDENCIAS Y CONSEJOS EN EL MUNDO DE LA
             CONSTRUCCIÓN!</span>
   
-          <form class="formulario-footer" action="correo-footer">
-            <label for="correo">Correo Electrónico <span>*</span></label>
-            <input type="email" id="correo" name="correo" required>
+          <form action="https://formsubmit.co/comercial.gamao@gmail.com" method="post" class="formulario-footer" action="correo-footer">
+            <input type="email" name="correo_footer" id="correo_footer" value="Correo electrónico" required onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Correo electrónico':this.value;" />
             <input type="submit" value="Enviar" id="submit-footer">
           </form>
+  
+          <a href="training.html" class="boton-training">
+            <button>TRAINING</button>
+            <span>Entrenamiento para egresados/bachilleres</span>
+          </a>
         </div>
+  
   
         <div class="footer-colum">
   
@@ -283,7 +284,7 @@
               target="_blank">Ciclope.Studio</a></span>
         </div>
         <div class="whatsapp">
-          <a href="https://wa.me/+51987687626">
+          <a href="https://wa.me/+51986935608">
             <img src="imagenes/pngs/whatsapp.png" alt="Whatsapp-GAMAO">
           </a>
         </div>

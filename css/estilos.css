@@ -46,7 +46,7 @@
 }
 
 .logo-main svg {
-    width: 40%;
+    width: 50%;
     height: auto;
     cursor: pointer;
     margin-top: 0.5%;
@@ -119,7 +119,7 @@
 
 .nav-bar li ul {
     width: auto;
-    height: 15vh;
+    height: 14vh;
     display: none;
     justify-content: center;
     position: fixed;
@@ -159,13 +159,6 @@
 
 /* Header sticky */
 
-.header-sticky .logo-main svg {
-    width: 40%;
-    height: auto;
-    cursor: pointer;
-    margin-top: 0.5%;
-}
-
 .header-sticky .cls-1 {
     fill: #a4222b;
 }
@@ -191,6 +184,13 @@
     z-index: 10;
     opacity: 80%;
     transition: 0.5s;
+}
+
+.header-sticky .logo-main svg {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+    margin-top: 0.5%;
 }
 
 .header-sticky .nav-bar ul li a {
@@ -280,6 +280,7 @@
     background-image: url("../imagenes/portada-index-01.webp");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     transition: background-image 0.5s ease;
     border: none;
 }
@@ -671,6 +672,10 @@
 .banner-main img {
     width: 100%;
     height: auto;
+}
+
+.banner-mobile {
+    display: none;
 }
 
 /* Proyectos-Main */
@@ -1374,14 +1379,15 @@ form button {
 .firma-footer span {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 400;
+
 }
 
 .firma-footer a {
     color: var(--blanco);
     font-family: "Poppins";
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
 }
 
@@ -1389,13 +1395,13 @@ form button {
     width: 100%;
     height: auto;
     position: fixed;
-    top: 88%;
-    left: 94%;
+    top: 85%;
+    left: 93%;
     z-index: 99;
 }
 
 .whatsapp img {
-    width: 5%;
+    width: 7%;
     height: auto;
 }
 
@@ -1946,7 +1952,7 @@ form button {
 
 .formulario-contactanos {
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: row;
     padding: 0 20%;
@@ -1954,7 +1960,7 @@ form button {
 }
 
 .imagen-contactenos {
-    width: 60%;
+    width: 100%;
     height: auto;
     display: flex;
 }
@@ -1965,8 +1971,8 @@ form button {
 }
 
 .formulario-contactenos {
-    width: 40%;
-    height: 90vh;
+    width: 100%;
+    height: auto;
     background: linear-gradient(to right, #080135 0%, #af202b 100%);
 }
 
@@ -1992,7 +1998,7 @@ form button {
     font-weight: 300;
     font-style: italic;
     border: none;
-    box-shadow: 1px 2px 4px 2px rgba(34, 33, 33, 0.288);
+    box-shadow: 1px 2px 4px 2px rgba(8, 1, 53, 0.200);
     padding: 0 5px;
 }
 
@@ -2218,41 +2224,57 @@ form button {
 
 /* BLOG lectura - estilos */
 
-.img-portada-blog {
+.portada-blog-lectura {
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-portada-blog img {
-    width: 60%;
-    height: auto;
-    margin: 2%;
+    height: 60vh;
+    background-image: url("../imagenes/portada-index-01.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contenido-blog {
-    width: 80%;
+    width: 60%;
     height: auto;
-    margin: 0 10%;
+    margin: -150px 20% 5% 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-style: none;
+    padding: 3%;
+    box-shadow: 1px 2px 4px 2px rgba(8, 1, 53, 0.200);
+    background-color: var(--blanco);
+}
+
+
+.contenido-blog h1 {
+    color: var(--color1);
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.contenido-blog span {
+    color: var(--color1);
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
 }
 
 .contenido-blog p {
     color: var(--color1);
     font-family: "Poppins";
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     text-align: justify;
-    padding: 2% 0;
+    padding-top: 3%;
 }
 
 .contenido-blog img {
-    width: 45%;
+    width: 100%;
     height: auto;
     margin: 3% 0;
 }
@@ -2387,7 +2409,7 @@ form button {
     }
 
     .logo-main svg {
-        width: 70%;
+        width: 50%;
         height: auto;
     }
 
@@ -2424,7 +2446,7 @@ form button {
     }
 
     .logo-main svg {
-        width: 80%;
+        width: 50%;
         height: auto;
     }
 
@@ -2463,7 +2485,7 @@ form button {
     }
 
     .logo-main svg {
-        width: 40%;
+        width: 50%;
         height: auto;
     }
 
@@ -2507,7 +2529,7 @@ form button {
     .nav-bar.active ul {
         opacity: 1;
     }
-    
+
     .nav-bar ul li a {
         display: block;
         color: var(--color1);
@@ -2900,7 +2922,7 @@ form button {
         border-style: solid;
         border-radius: 15px;
         margin: 1% 10%;
-        box-shadow: 1px 2px 4px 2px rgba(34, 33, 33, 0.288);
+        box-shadow: 1px 2px 4px 2px rgba(8, 1, 53, 0.200);
     }
 
     .blog-resume {
@@ -3279,12 +3301,13 @@ form button {
     /* CONTACTANOS - formulario */
 
     .formulario-contactanos {
-        padding: 0 3%;
-        margin-top: -75px;
+        padding: 0 10%;
+        margin-top: -100px;
+        flex-direction: column-reverse;
     }
 
     .imagen-contactenos {
-        width: 60%;
+        width: 100%;
         height: auto;
         display: flex;
     }
@@ -3295,12 +3318,12 @@ form button {
     }
 
     .formulario-contactenos {
-        width: 40%;
+        width: 100%;
         height: auto;
     }
 
     .formulario-contactenos form {
-        padding: 2%;
+        padding: 2% 10% 8% 10%;
     }
 
     .formulario-contactenos label {
@@ -3314,7 +3337,7 @@ form button {
     }
 
     .mapa-contacto {
-        padding: 0 3%;
+        padding: 0 10%;
         margin-bottom: 50px;
     }
 
@@ -3346,11 +3369,18 @@ form button {
         height: auto;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient(to top, #af202b 0%, #080135 50%);
+        padding: 0 8%;
     }
 
     .footer-colum {
         width: 100%;
         height: auto;
+        padding-bottom: 10%;
+        border-bottom: 1px;
+        border-style: solid;
+        border-color: var(--blanco);
     }
 
     .footer-colum nav {
@@ -3362,7 +3392,7 @@ form button {
         font-family: "Poppins";
         font-size: 20px;
         font-weight: 800;
-        text-align: left;
+        text-align: center;
         text-decoration: underline var(--color2) 4px;
         margin-bottom: 25px;
     }
@@ -3379,27 +3409,47 @@ form button {
         font-family: "Poppins";
         font-size: 12px;
         font-weight: 400;
-        text-align: justify;
-        margin-right: 25px;
+        text-align: center;
+        margin-right: 0;
         padding: 5px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    form {
+    .footer-informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-informacion img {
+        justify-content: center;
+    }
+
+    .formulario-footer {
         color: var(--blanco);
         font-family: "Poppins";
         font-size: 12px;
         font-weight: 400;
         margin-top: 15px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
-    form input {
+    .formulario-footer input {
         color: var(--color1);
     }
 
-    form button {
-        color: var(--color1);
+    .submit-footer {
+        color: var(--blanco);
         font-family: "Poppins";
-        font-size: 12px;
+        font-size: 120px;
         font-weight: 400;
         margin-top: 15px;
     }
@@ -3464,13 +3514,28 @@ form button {
         height: auto;
         position: fixed;
         top: 90%;
-        left: 82%;
+        left: 80%;
         z-index: 99;
     }
 
     .whatsapp img {
-        width: 15%;
+        width: 20%;
         height: auto;
+    }
+
+    .firma-footer span {
+        color: var(--blanco);
+        font-family: "Poppins";
+        font-size: 11px;
+        font-weight: 400;
+        padding: 5% 0;
+    }
+
+    .firma-footer a {
+        color: var(--blanco);
+        font-family: "Poppins";
+        font-size: 11px;
+        font-weight: 700;
     }
 
     /* Galeria Obras */
@@ -3536,7 +3601,7 @@ form button {
     }
 
     .contenido-blog {
-        width: 80%;
+        width: 100%;
         height: auto;
         margin: 0 10%;
         display: flex;
@@ -3558,5 +3623,31 @@ form button {
         width: 80%;
         height: auto;
         margin: 3% 0;
+    }
+
+    /* Banner-Main */
+
+    .banner-index {
+        display: none;
+    }
+
+    .banner-main {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3%;
+        cursor: pointer;
+    }
+
+    .banner-main img {
+        width: 100%;
+        height: auto;
+    }
+
+    .banner-index {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
     }
 }
