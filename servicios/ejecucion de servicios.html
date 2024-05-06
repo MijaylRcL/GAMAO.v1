@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web GAMAO</title>
+  <title>Servicios - ejecución de servicios</title>
   <link rel="Stylesheet" href="../css/estilos.css">
   <link rel="icon" type="image/png" href="../imagenes/pngs/favicon-GAMAO.png">
 
@@ -14,6 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
@@ -86,7 +87,7 @@
           <a href="../servicios.html" class="active">SERVICIOS▾</a>
           <ul>
             <li>
-              <a href="../servicios\ejecucion de obras.html">
+              <a href="../servicios/ejecucion de obras.html">
                 <img src="../imagenes/pngs/servicio-ejecucion-azul.png">
               </a>
             </li>
@@ -126,30 +127,81 @@
   </header>
 
   <main>
-    <section class="portada-blog-lectura">
-      <br>
+
+    <!-- Portada -->
+
+    <section class="portada-servicios-lista">
+
+      <img src="../imagenes/main - mantenimiento.webp" alt="Portada Ejecicion de obras" class="fondo-servicios">
+      <img src="../imagenes/pngs/mantenimiento y remodelacion de infraestructura logo.png" alt="Logo ejecucion de obras" class="logo-servicios">
+
     </section>
 
-    <section class="contenido-blog">
-      <h1>PUENTES SEGMENTALES</h1>
-      <span>Ing. Galvarino Pinto / 02 Mayo 2024</span>
-      <p>Los puentes segmetales, son aquellos que se construyen por tramos o segmentos, por ejemplo: El proceso
-        constructivo ejecutado en el puente Chilina, en Arequipa – Perú; entre otros grandes puentes continuos,
-        atirantados, etc., alrededor del mundo. La construcción de este tipo de puentes amerita o requiere, en
-        principio, conocimientos del comportamiento del Concreto Postensado, conocer el comportamiento del
-        puente que se está diseñando sobre todo durante el proceso constructivo; así como, hacer un adecuado
-        seguimiento (Control geométrico) durante el proceso constructivo, por eso también la importancia de
-        contar con datos de niveles (flechas, contrafechas) en cada etapa de la construcción del puente y/o
-        datos, características en cuanto al concreto (creep, shrinkage, etc). Hoy en día es fundamental que un
-        ingeniero civil pueda contar con estos conocimientos para marcar la diferencia (Galvarino Pinto 2024).
-      </p>
-      <img src="../imagenes/portada-index-03.webp" alt="Portada Blog">
-      <p>Según el Instituto Americano de Puentes Segmentales ASBI, por sus siglas en inglés, menciona: Construir
-        un puente con este proceso tiene muchas ventajas entre las que destacan; procedimientos de construcción
-        repetitivos, mínimo impacto en el tránsito y el medio ambiente durante la construcción, construcción
-        económica y una estructura durable (ASBI, 2024).
+    <!-- Contenido -->
+
+    <section class="servicios-contenido">
+
+      <h1>EJECUCIÓN DE SERVICIOS</h1>
+
+      <p>Nos especializamos en ofrecer servicios integrales de mantenimiento preventivo y correctivo para
+        garantizar el óptimo funcionamiento y la seguridad de todo tipo de estructuras. Nuestro equipo de
+        profesionales altamente calificados y experimentados en diversas áreas, incluyendo ingeniería,
+        electricidad, y más, se dedica a inspeccionar, diagnosticar y resolver cualquier problema de
+        mantenimiento que pueda surgir en las instalaciones de nuestros clientes. Desde pequeñas reparaciones
+        hasta proyectos de renovación a gran escala, nos comprometemos a ofrecer soluciones eficientes y de
+        calidad para satisfacer las necesidades específicas de cada cliente. Nuestra empresa utiliza tecnología
+        avanzada y mejores prácticas de la industria para garantizar la eficiencia operativa y la longevidad de
+        las estructuras que mantenemos. En GAMAO, nos esforzamos por superar las expectativas de nuestros
+        clientes, proporcionando un servicio confiable, profesional y orientado al cliente en todo momento. Con
+        un enfoque en la calidad, la seguridad y la satisfacción del cliente, somos la elección ideal para todas
+        las necesidades de mantenimiento de infraestructuras y edificaciones.
       </p>
     </section>
+
+    <!-- Brochure -->
+
+    <section class="banner-main">
+
+      <img src="../imagenes/main-banner.webp">
+
+    </section>
+
+    <!-- Contacto -->
+
+    <section class="contacto-main">
+
+      <div class="contac-izq">
+
+        <h2>CONSTRUYAMOS JUNTOS</h2>
+        <p>Llene el formulario y un asesor se pondrá en contacto lo más pronto posible.</p>
+
+        <form action="https://formsubmit.co/comercial.gamao@gmail.com" method="post"
+          onsubmit="return validarFormulario()">
+          <label for="nombre_apellido">Nombres y Apellidos <span>*</span></label>
+          <input type="text" id="nombre_apellido" name="nombre_servicios" required pattern="[a-zA-Z\s]+"
+            title="Ingrese solo letras y espacios">
+
+          <label for="correo">Correo Electrónico <span>*</span></label>
+          <input type="email" id="correo" name="correo_servicios" required>
+
+          <label for="telefono">Número de Teléfono <span>*</span></label>
+          <input type="tel" id="telefono" name="telefono_servicios" required pattern="[0-9]+"
+            title="Ingrese solo números">
+
+          <label for="mensaje">Mensaje <span>*</span></label>
+          <textarea id="mensaje" name="mensaje_servicios" required></textarea>
+
+          <input type="submit" value="Enviar">
+        </form>
+
+      </div>
+
+      <div class="contac-der">
+        <img src="../imagenes/contacto-foto.webp" alt="Pasion por lo que hacemos">
+      </div>
+
+    </section>
+
 
   </main>
 
@@ -208,8 +260,11 @@
           TENDENCIAS Y CONSEJOS EN EL MUNDO DE LA
           CONSTRUCCIÓN!</span>
 
-        <form action="https://formsubmit.co/comercial.gamao@gmail.com" method="post" class="formulario-footer" action="correo-footer">
-          <input type="email" name="correo_footer" id="correo_footer" value="Correo electrónico" required onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'Correo electrónico':this.value;" />
+        <form action="https://formsubmit.co/comercial.gamao@gmail.com" method="post" class="formulario-footer"
+          action="correo-footer">
+          <input type="email" name="correo_footer" id="correo_footer" value="Correo electrónico" required
+            onclick="this.value='';" onfocus="this.select()"
+            onblur="this.value=!this.value?'Correo electrónico':this.value;" />
           <input type="submit" value="Enviar" id="submit-footer">
         </form>
 

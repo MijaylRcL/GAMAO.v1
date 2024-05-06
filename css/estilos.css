@@ -142,7 +142,7 @@
 
 .nav-bar li ul img {
     width: auto;
-    height: 10vh;
+    height: 9vh;
     border-top: 0;
 }
 
@@ -2284,25 +2284,24 @@ form button {
 .portada-servicios-lista {
     width: 100%;
     height: 75vh;
-    background-image: url("../imagenes/servicios-portada01.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.portada-servicios-lista-image {
+.fondo-servicios {
     width: 100%;
     height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.portada-servicios-lista-image img {
-    width: 15%;
-    height: auto;
+.logo-servicios {
+    width: auto;
+    height: 20vh;
+    position: absolute;
 }
+
+/* Servicios-lista - contenido */
 
 .servicios-contenido {
     width: 100%;
@@ -2440,6 +2439,12 @@ form button {
         height: 90vh;
         margin-bottom: 5%;
     }
+
+    .nav-bar li ul img {
+        width: auto;
+        height: 8vh;
+        border-top: 0;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -2479,6 +2484,7 @@ form button {
         height: 90vh;
         margin-bottom: 5%;
     }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -3356,10 +3362,28 @@ form button {
         margin-bottom: 50px;
     }
 
+    /* Servicios-lista - galeria lista */
+
+    .portada-servicios-lista {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .fondo-servicios {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .logo-servicios {
+        width: auto;
+        height: 15vh;
+        position: absolute;
+    }
+
     /* SERVICIOS - contenido */
 
     .servicios-contenido {
-        padding: 0 5%;
+        padding: 5%;
     }
 
     .servicios-contenido h1 {
