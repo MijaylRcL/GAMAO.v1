@@ -123,7 +123,7 @@
     display: none;
     justify-content: center;
     position: fixed;
-    margin: 0 1% 0 -5%;
+    margin: 0 1% 0 -12%;
     padding-top: 10px;
     background-color: var(--blanco);
     border-top: 0;
@@ -142,8 +142,12 @@
 
 .nav-bar li ul img {
     width: auto;
-    height: 9vh;
+    height: 10vh;
     border-top: 0;
+}
+
+#esp-ing {
+    margin: 0 1% 0 -2.5%;
 }
 
 #img-ing {
@@ -213,11 +217,11 @@
 
 .header-sticky .nav-bar li ul {
     width: auto;
-    height: 15vh;
+    height: 14vh;
     display: none;
     justify-content: center;
     position: fixed;
-    margin: 0 1% 0 -5%;
+    margin: 0 1% 0 -12%;
     padding-top: 10px;
     background-color: var(--blanco);
     border-top: 0;
@@ -2440,11 +2444,6 @@ form button {
         margin-bottom: 5%;
     }
 
-    .nav-bar li ul img {
-        width: auto;
-        height: 8vh;
-        border-top: 0;
-    }
 }
 
 @media only screen and (max-width: 1100px) {
