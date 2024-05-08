@@ -2355,6 +2355,26 @@ form button {
     cursor: pointer;
     transition: 0.3s;
 }
+#myImg-obras02 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg-obras03 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg-obras04 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg-obras05 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg-obras06 {
+    cursor: pointer;
+    transition: 0.3s;
+}
 
 /* The Modal (background) */
 .modal-obras {
@@ -2494,6 +2514,10 @@ form button {
     width: 90%;
     height: auto;
     filter: grayscale(98%);
+}
+
+.container-galeria .modal-content-obras {
+    filter: none;
 }
 
 .container-galeria img:hover {
@@ -3802,5 +3826,20 @@ form button {
 
     .banner-mobile {
         display: block;
+    }
+
+    /* The Modal (background) */
+    .modal-obras {
+        padding: 70% 5%;
+        left: 0;
+        top: 0;
+    }
+
+    /* The Close Button */
+    .close-obras {
+        top: 25%;
+        right: 15px;
+        font-size: 45px;
+        font-weight: 800;
     }
 }
