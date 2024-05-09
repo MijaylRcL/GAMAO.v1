@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GAMAO - ALMACEN DE TECNOLOGIA DE LA INFORMACION.</title>
-  <link rel="Stylesheet" href="../css/estilos.css">
+  <link rel="Stylesheet" href="../css/estilos-modal.css">
   <link rel="icon" type="image/png" href="../imagenes/pngs/favicon-GAMAO.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,76 +130,103 @@
 
     <h1 id="titulo-obras">ALMACEN DE TECNOLOGIA DE LA INFORMACION</h1>
 
-    <section class="container-galeria">
+    <section class="galeria-obras">
 
       <div class="row">
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\01.webp" alt="Galeria Obras" id="myImg-obras" class="myImg-obras">
-
-          <div id="myModal-obras" class="modal-obras myModal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras img-obras" id="img-obras" alt="Modal Obras">
-            <div id="caption-modal" class="caption-modal"></div>
-          </div>
-
+        <div class="column">
+          <img src="../imagenes\proyecto02\01.webp" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         </div>
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\02.webp" alt="Galeria Obras" id="myImg-obras">
-          
-          <div id="myModal-obras" class="modal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras" id="img-obras" alt="Modal Obras">
-            <div id="caption-modal"></div>
-          </div>
-          
+        <div class="column">
+          <img src="../imagenes\proyecto02\02.webp" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\03.webp" alt="Galeria Obras" id="myImg-obras03">
-          
-          <div id="myModal-obras" class="modal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras" id="img03-obras" alt="Modal Obras">
-            <div id="caption-modal"></div>
-          </div>
-          
+        <div class="column">
+          <img src="../imagenes\proyecto02\03.webp" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\04.webp" alt="Galeria Obras" id="myImg-obras04">
-          
-          <div id="myModal-obras" class="modal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras" id="img04-obras" alt="Modal Obras">
-            <div id="caption-modal"></div>
-          </div>
-          
+        <div class="column">
+          <img src="../imagenes\proyecto02\04.webp" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\05.webp" alt="Galeria Obras" id="myImg-obras05">
-          
-          <div id="myModal-obras" class="modal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras" id="img05-obras" alt="Modal Obras">
-            <div id="caption-modal"></div>
-          </div>
-          
+        <div class="column">
+          <img src="../imagenes\proyecto02\05.webp" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
         </div>
-
-        <div class="col-lg-4">
-          <img src="../imagenes\proyecto02\06.webp" alt="Galeria Obras" id="myImg-obras06">
-          
-          <div id="myModal-obras" class="modal-obras">
-            <span class="close-obras">&times;</span>
-            <img class="modal-content-obras" id="img06-obras" alt="Modal Obras">
-            <div id="caption-modal"></div>
-          </div>          
+        <div class="column">
+          <img src="../imagenes\proyecto02\06.webp" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
         </div>
       </div>
 
+      <p class="descripcion">*Click en la imagen para verla en tamaño completo.</p>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="../imagenes\proyecto02\01.webp">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="../imagenes\proyecto02\02.webp">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="../imagenes\proyecto02\03.webp">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="../imagenes\proyecto02\04.webp">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="../imagenes\proyecto02\05.webp">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="../imagenes\proyecto02\06.webp">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="peque-lista">
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\01.webp" onclick="currentSlide(1)">
+            </div>
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\02.webp" onclick="currentSlide(2)">
+            </div>
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\03.webp" onclick="currentSlide(3)">
+            </div>
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\04.webp" onclick="currentSlide(4)">
+            </div>
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\05.webp" onclick="currentSlide(5)">
+            </div>
+            <div class="column peque">
+              <img class="demo cursor" src="../imagenes\proyecto02\06.webp" onclick="currentSlide(6)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria-mobil">
+      <img src="../imagenes\proyecto02\01.webp">
+      <img src="../imagenes\proyecto02\02.webp">
+      <img src="../imagenes\proyecto02\03.webp">
+      <img src="../imagenes\proyecto02\04.webp">
+      <img src="../imagenes\proyecto02\05.webp">
+      <img src="../imagenes\proyecto02\06.webp">
     </section>
 
   </main>
